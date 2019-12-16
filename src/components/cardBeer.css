@@ -1,0 +1,16 @@
+.img-center{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.icon-beer{
+    height:160px !important;
+    width: 55px !important;
+}
+
+.btn-beer{
+    color: #f3e4ad !important;
+    background-color: #232321 !important;
+    border-color: #232321 !important;
+}
