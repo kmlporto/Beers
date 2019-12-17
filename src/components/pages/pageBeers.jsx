@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import ReactPaginate from 'react-paginate';
-
-
-import '../pagination.css'
 
 import ListOfBeers from '../listOfBeers';
 import TitlePage from './titlePageBeers';
+import Pagination from '../pagination';
+
 
 const URL = `https://api.punkapi.com/v2/beers`;
 
@@ -55,19 +53,13 @@ export default class Beer extends Component{
     return(
       <div className="container bg-orange">
         <TitlePage/>
-        <ListOfBeers beers={this.state.beers}/>
-        <div className="flex-center">
-          <ReactPaginate
-              previousLabel={"prev"}
-              nextLabel={"next"}
-              pageCount={this.state.pageCount}
-              marginPagesDisplayed={3}
-              pageRangeDisplayed={5}
-              onPageChange={this.handlePageClick}
-              containerClassName={"pagination"}
-              subContainerClassName={"pages pagination"}
-              activeClassName={"active"}/>
-        </div>
+        <ListOfBeers 
+          beers={this.state.beers}
+        />
+        <Pagination  
+          pageCount={this.state.pageCount}
+          onPageChange={this.handlePageClick}
+        />
       </div>
     )
   }

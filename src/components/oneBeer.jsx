@@ -1,5 +1,5 @@
 import React from 'react'
-import DetailBeer from './detailBeer'
+import DetailBeer from './detailsBeer'
 
 export default props => {
   const renderBeer = () =>{
