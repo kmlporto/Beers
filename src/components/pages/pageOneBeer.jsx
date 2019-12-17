@@ -29,7 +29,9 @@ export default class Beer extends Component{
 
   render() {
   return (
-    <OneBeer beer={this.state.beer}/>
-      )
+    <div className="container vh-100 bg-dark-orange">
+      <OneBeer beer={this.state.beer}/>
+    </div>
+    )
   }
 }

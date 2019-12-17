@@ -15,8 +15,6 @@ export default props => {
   }
 
   return (
-    <div className="beers">
-      {renderBeer()}
-    </div>
+    renderBeer()
   )
 }
