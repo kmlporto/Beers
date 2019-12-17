@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import ListOfBeers from '../listOfBeers';
-import TitlePage from '../pages/titlePageBeers';
+import TitlePage from './titlePageBeers';
 
 const URL = `https://api.punkapi.com/v2/beers`;
-// https://api.punkapi.com/v2/beers?page=2&per_page=80
 // `${URL}?page=${state.currentPage}&per_page=${this.state.perPage}`
+
 export default class Beer extends Component{
   constructor(props){
     super(props)
