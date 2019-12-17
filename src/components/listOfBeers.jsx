@@ -5,7 +5,7 @@ export default props => {
   const renderRows = () =>{
     const beers = props.beers || []
     return beers.map(beer => (
-      <CardBeer name={beer.name} tagline={beer.tagline} image_url={beer.image_url}/>
+      <CardBeer name={beer.name} tagline={beer.tagline} image_url={beer.image_url} id={beer.id}/>
     ))
   }
 
